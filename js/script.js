@@ -13,7 +13,7 @@ montant.addEventListener('input', conversion)
 montantRub.addEventListener('input', conversionRub)
 
 // Init Rate
-let rate = 0.103;
+let rate = 0.1
 let rateRub = 8.69;
 
 function conversion () {
