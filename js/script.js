@@ -1,4 +1,6 @@
 // DOM HANDLE
+const title = document.querySelector('.title')
+const card = document.querySelector('.card')
 const montant = document.getElementById('montant')
 const equivalance = document.getElementById('equivalance')
 const divEquivalance = document.querySelector('.equivalance')
@@ -6,20 +8,17 @@ const montantRub = document.getElementById('montant-rub')
 const equivalanceRub = document.getElementById('equivalance-rub')
 const divEquivalanceRub = document.querySelector('.equivalance-rub')
 
-console.log(divEquivalance);
-
 // EVENT LISTENER
 montant.addEventListener('input', conversion)
 montantRub.addEventListener('input', conversionRub)
 
 // Init Rate
 let rate = 0.1
-let rateRub = 8.69;
+let rateRub = 8.69
 
 function conversion () {
   // Get user input value
   const userInputValue = montant.value
-  console.log(userInputValue);
   // Conersion
   const tatalMoney = new Intl.NumberFormat().format(userInputValue * rate)
   // Insert to HTML
@@ -48,3 +47,13 @@ function conversionRub() {
     divEquivalanceRub.style.display = 'none'
   }
 }
+
+// ============== Scroll Reveal ============== //
+const sr = ScrollReveal({
+  distance: '90px',
+  duration: 1500,
+})
+
+sr.reveal(`.title`, { origin: 'top', delay: 300 })
+sr.reveal(`.card-1`, { origin: 'left', delay: 500 })
+sr.reveal(`.card-2`, { origin: 'right', delay: 700 })

@@ -1,5 +1,28 @@
 body {
-  background-color: #f4f4f4;
+  background-image: url('../img/banner.jpg');
+  background-color: #4d9eef;
+}
+
+h2 {
+  position: relative;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+h5 {
+  margin-bottom: 1.3rem;
+}
+
+.titleBorder {
+  width: 100%;
+  height: 5px;
+  background-color: #f1c40f;
+  border-radius: 50px;
+  margin-top: .5rem;
+}
+
+i {
+  font-size: 1.3rem;
 }
 
 .container {
@@ -7,12 +30,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .card {
-  background-color: #fff;
-  border: 1px solid #BDBDBD;
+  margin-top: 2rem;
+  background-color: #4569BE;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .equivalance {
