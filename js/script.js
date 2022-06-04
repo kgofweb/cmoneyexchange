@@ -15,9 +15,6 @@ const montantRubAc = document.getElementById('montant-rub-ac')
 const equivalanceRubAc = document.getElementById('equivalance-rub-ac')
 const divEquivalanceRubAc = document.querySelector('.equivalance-rub-ac')
 
-console.log(divEquivalanceAc);
-console.log(divEquivalanceRubAc);
-
 // EVENT LISTENER
 montant.addEventListener('input', conversion)
 montantRub.addEventListener('input', conversionRub)
@@ -25,7 +22,7 @@ montantRub.addEventListener('input', conversionRub)
 // ================= AO ================= //
 // Init Rate
 let rate = 0.1025
-let rateRub = 9.8609605
+let rateRub = 8.69565217
 
 function conversion () {
   // Get user input value
