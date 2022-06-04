@@ -46,6 +46,13 @@ i {
 .equivalance-rub {
   display: none;
 }
+.equivalance-ac {
+  display: none;
+}
+
+.equivalance-rub-ac {
+  display: none;
+}
 
 @media screen and (max-width: 800px) {
   .card {

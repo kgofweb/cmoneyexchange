@@ -8,13 +8,24 @@ const montantRub = document.getElementById('montant-rub')
 const equivalanceRub = document.getElementById('equivalance-rub')
 const divEquivalanceRub = document.querySelector('.equivalance-rub')
 
+const montantAc = document.getElementById('montant-ac')
+const equivalanceAc = document.getElementById('equivalance-ac')
+const divEquivalanceAc = document.querySelector('.equivalance-ac')
+const montantRubAc = document.getElementById('montant-rub-ac')
+const equivalanceRubAc = document.getElementById('equivalance-rub-ac')
+const divEquivalanceRubAc = document.querySelector('.equivalance-rub-ac')
+
+console.log(divEquivalanceAc);
+console.log(divEquivalanceRubAc);
+
 // EVENT LISTENER
 montant.addEventListener('input', conversion)
 montantRub.addEventListener('input', conversionRub)
 
+// ================= AO ================= //
 // Init Rate
 let rate = 0.1025
-let rateRub = 8.69565217
+let rateRub = 9.8609605
 
 function conversion () {
   // Get user input value
@@ -36,7 +47,7 @@ function conversionRub() {
   // Get user input value
   const userInputVal = montantRub.value
   // Conersion
-  const tatalMoney = new Intl.NumberFormat().format(userInputVal * rateRub)
+  const tatalMoney = userInputVal * rateRub
   // Insert to HTML
   equivalanceRub.innerHTML = `<b>${tatalMoney}</b>`
 
@@ -47,6 +58,45 @@ function conversionRub() {
     divEquivalanceRub.style.display = 'none'
   }
 }
+
+
+// ================= AC ================= //
+let rateAc = 0.1005
+let rateRubAc = 8.69565217
+
+montantAc.addEventListener('input', () => {
+  // Get user input value
+  const userInputValue = montantAc.value
+  // Conersion
+  const tatal = userInputValue * rateAc
+  // Insert to HTML
+  equivalanceAc.innerHTML = `<b>${tatal}</b>`
+
+  // Dynamic show div equivalance
+  if (userInputValue) {
+    divEquivalanceAc.style.display = 'block'
+  } else {
+    divEquivalanceAc.style.display = 'none'
+  }
+})
+
+montantRubAc.addEventListener('input', () => {
+  // Get user input value
+  const userInputValue = montantRubAc.value
+  // Conersion
+  const tatal = userInputValue * rateRubAc
+  // Insert to HTML
+  equivalanceRubAc.innerHTML = `<b>${tatal}</b>`
+
+  // Dynamic show div equivalance
+  if (userInputValue) {
+    divEquivalanceRubAc.style.display = 'block'
+  } else {
+    divEquivalanceRubAc.style.display = 'none'
+  }
+})
+
+
 
 // ============== Scroll Reveal ============== //
 const sr = ScrollReveal({
