@@ -21,14 +21,14 @@ montantRub.addEventListener('input', conversionRub)
 
 // ================= AO ================= //
 // Init Rate
-let rate = 0.1005
+let rate = 0.1025
 let rateRub = 8.69565217
 
 function conversion () {
   // Get user input value
   const userInputValue = montant.value
   // Conersion
-  const tatalMoney = userInputValue * rate
+  const tatalMoney = new Intl.NumberFormat().format(userInputValue * rate)
   // Insert to HTML
   equivalance.innerHTML = `<b>${tatalMoney}</b>`
 
@@ -58,7 +58,7 @@ function conversionRub() {
 
 
 // ================= AC ================= //
-let rateAc = 0.1
+let rateAc = 0.1005
 let rateRubAc = 8.69565217
 
 montantAc.addEventListener('input', () => {
@@ -103,4 +103,10 @@ const sr = ScrollReveal({
 
 sr.reveal(`.title`, { origin: 'top', delay: 300 })
 sr.reveal(`.card-1`, { origin: 'left', delay: 500 })
-sr.reveal(`.card-2`, { origin: 'right', delay: 700 })
+// sr.reveal(`.card-2`, { origin: 'right', delay: 700 })
+
+// const navLink = document.querySelectorAll('.nav-link')
+
+// navLink.forEach(el => el.addEventListener('click', () => {
+  
+// }))

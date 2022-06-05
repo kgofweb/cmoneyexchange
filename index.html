@@ -12,81 +12,93 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="title mb-3"><span>Chapmoney</span> 
+    <h2 class="title mb-5 mt-4"><span>Chapmoney</span> 
       Convert
       <div class="titleBorder"></div>
     </h2>
-    <div class="card card-1 w-50">
-      <div class="card-body">
-        <h5>
-          Afrique de l'Ouest 
-          <i class="uil uil-scroll-h"></i>
-          Russie
-        </h5>
-        <div class="row">
-          <div class="col-6">
-            <div class="mb-3">
-              <i class="uil uil-money-insert"></i>
-              <label class="form-label">Montant <b>CFA</b></label>
-              <input type="number" class="form-control" id="montant">
-            </div>
-            <div class="equivalance">
-              <i class="uil uil-money-withdraw"></i>
-              <label class="form-label">Equivalence <b>RUB</b></label>
-              <div type="text" class="form-control" id="equivalance"></div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="montant-rub mb-3">
-              <i class="uil uil-money-insert"></i>
-              <label class="form-label">Montant <b>RUB</b></label>
-              <input type="number" class="form-control" id="montant-rub">
-            </div>
-            <div class="equivalance-rub">
-              <i class="uil uil-money-withdraw"></i>
-              <label class="form-label">Equivalence <b>CFA</b></label>
-              <div type="text" class="form-control" id="equivalance-rub"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- AC -->
-    <div class="card card-2 w-50">
-      <div class="card-body">
-        <h5>
-          Afrique Centrale 
-          <i class="uil uil-scroll-h"></i>
-          Russie
-        </h5>
-        <div class="row">
-          <div class="col-6">
-            <div class="mb-3">
-              <i class="uil uil-money-insert"></i>
-              <label class="form-label">Montant <b>CFA</b></label>
-              <input type="number" class="form-control" id="montant-ac">
-            </div>
-            <div class="equivalance-ac">
-              <i class="uil uil-money-withdraw"></i>
-              <label class="form-label">Equivalence <b>RUB</b></label>
-              <div type="text" class="form-control" id="equivalance-ac"></div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="montant-rub-ac mb-3">
-              <i class="uil uil-money-insert"></i>
-              <label class="form-label">Montant <b>RUB</b></label>
-              <input type="number" class="form-control" id="montant-rub-ac">
-            </div>
-            <div class="equivalance-rub-ac">
-              <i class="uil uil-money-withdraw"></i>
-              <label class="form-label">Equivalence <b>CFA</b></label>
-              <div type="text" class="form-control" id="equivalance-rub-ac"></div>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <button class="nav-link tab-item active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-selected="true">
+          <i class="uil uil-credit-card"></i>
+          Afrique de l'Ouest
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link tab-item" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="uil uil-credit-card"></i>
+          Afrique Centrale
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="card card-1 w-50 mt-5">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3">
+                  <i class="uil uil-money-insert"></i>
+                  <label class="form-label">Montant <b>CFA</b></label>
+                  <input type="number" class="form-control" id="montant">
+                </div>
+                <div class="equivalance">
+                  <i class="uil uil-money-withdraw"></i>
+                  <label class="form-label">Equivalence <b>RUB</b></label>
+                  <div type="text" class="form-control" id="equivalance"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="montant-rub mb-3">
+                  <i class="uil uil-money-insert"></i>
+                  <label class="form-label">Montant <b>RUB</b></label>
+                  <input type="number" class="form-control" id="montant-rub">
+                </div>
+                <div class="equivalance-rub">
+                  <i class="uil uil-money-withdraw"></i>
+                  <label class="form-label">Equivalence <b>CFA</b></label>
+                  <div type="text" class="form-control" id="equivalance-rub"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <div class="card card-2 w-50 mt-5">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3">
+                  <i class="uil uil-money-insert"></i>
+                  <label class="form-label">Montant <b>CFA</b></label>
+                  <input type="number" class="form-control" id="montant-ac">
+                </div>
+                <div class="equivalance-ac">
+                  <i class="uil uil-money-withdraw"></i>
+                  <label class="form-label">Equivalence <b>RUB</b></label>
+                  <div type="text" class="form-control" id="equivalance-ac"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="montant-rub-ac mb-3">
+                  <i class="uil uil-money-insert"></i>
+                  <label class="form-label">Montant <b>RUB</b></label>
+                  <input type="number" class="form-control" id="montant-rub-ac">
+                </div>
+                <div class="equivalance-rub-ac">
+                  <i class="uil uil-money-withdraw"></i>
+                  <label class="form-label">Equivalence <b>CFA</b></label>
+                  <div type="text" class="form-control" id="equivalance-rub-ac"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>    
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
