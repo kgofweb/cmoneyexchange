@@ -28,7 +28,7 @@ function conversion () {
   // Get user input value
   const userInputValue = montant.value
   // Conersion
-  const tatalMoney = new Intl.NumberFormat().format(userInputValue * rate)
+  const tatalMoney = userInputValue * rate
   // Insert to HTML
   equivalance.innerHTML = `<b>${tatalMoney}</b>`
 
