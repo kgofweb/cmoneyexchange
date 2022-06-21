@@ -22,7 +22,7 @@ montantRub.addEventListener('input', conversionRub)
 // ================= AO ================= //
 // Init Rate
 let rate = 0.0903
-let rateRub = 9.43396226
+let rateRub = 9.6153846
 
 function conversion () {
   // Get user input value
@@ -59,7 +59,7 @@ function conversionRub() {
 
 // ================= AC ================= //
 let rateAc = 0.093
-let rateRubAc = 9.43396226
+let rateRubAc = 9.6153846
 
 montantAc.addEventListener('input', () => {
   // Get user input value
