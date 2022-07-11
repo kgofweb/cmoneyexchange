@@ -58,7 +58,7 @@ function conversionRub() {
 
 
 // ================= AC ================= //
-let rateAc = 0.0999
+let rateAc = 0.0970
 let rateRubAc = 10.1
 
 montantAc.addEventListener('input', () => {
