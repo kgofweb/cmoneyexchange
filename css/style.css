@@ -17,6 +17,10 @@ img {
   margin-right: auto;
 }
 
+input {
+  border: none;
+}
+
 .nav-tabs {
   width: 50%;
   border: none;
@@ -32,13 +36,17 @@ img {
 
 .card {
   margin-top: 2rem;
-  background-color: #4569BE;
-  border: 1px solid #fff;
+  background-color: #222f3e;
   color: #fff;
 }
 
+.card-1 {
+  border-left: 8px solid #fff;
+}
+
 .card-2 {
-  background-color: #16a085;
+  background-color: #636e72;
+  border-left: 8px solid #fff;
 }
 
 .equivalance {
@@ -54,6 +62,11 @@ img {
 
 .equivalance-rub-ac {
   display: none;
+}
+
+.result {
+  background-color: #c5f9da;
+  border-left: 7px solid #2ed573;
 }
 
 @media screen and (max-width: 800px) {

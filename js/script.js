@@ -21,20 +21,20 @@ montantRub.addEventListener('input', conversionRub)
 
 // ================= AO ================= //
 // Init Rate
-let rate = 0.0999
-let rateRub = 10
+let rate = 0.0970
+let rateRub = 10.1
 
 function conversion () {
   // Get user input value
   const userInputValue = montant.value
   // Conersion
-  const tatalMoney = userInputValue * rate
+  const tatalMoney = new Intl.NumberFormat().format(userInputValue * rate)
   // Insert to HTML
   equivalance.innerHTML = `<b>${tatalMoney}</b>`
 
   // Dynamic show div equivalance
   if (userInputValue) {
-    divEquivalance.style.display = 'block'
+    divEquivalance.style.display = 'flex'
   } else {
     divEquivalance.style.display = 'none'
   }
@@ -44,13 +44,13 @@ function conversionRub() {
   // Get user input value
   const userInputVal = montantRub.value
   // Conersion
-  const tatalMoney = userInputVal * rateRub
+  const tatalMoney = new Intl.NumberFormat().format(userInputVal * rateRub)
   // Insert to HTML
   equivalanceRub.innerHTML = `<b>${tatalMoney}</b>`
 
   // Dynamic show div equivalance
   if (userInputVal) {
-    divEquivalanceRub.style.display = 'block'
+    divEquivalanceRub.style.display = 'flex'
   } else {
     divEquivalanceRub.style.display = 'none'
   }
@@ -58,20 +58,20 @@ function conversionRub() {
 
 
 // ================= AC ================= //
-let rateAc = 0.093
-let rateRubAc = 10
+let rateAc = 0.0999
+let rateRubAc = 10.1
 
 montantAc.addEventListener('input', () => {
   // Get user input value
   const userInputValue = montantAc.value
   // Conersion
-  const tatal = userInputValue * rateAc
+  const tatal = new Intl.NumberFormat().format(userInputValue * rateAc)
   // Insert to HTML
   equivalanceAc.innerHTML = `<b>${tatal}</b>`
 
   // Dynamic show div equivalance
   if (userInputValue) {
-    divEquivalanceAc.style.display = 'block'
+    divEquivalanceAc.style.display = 'flex'
   } else {
     divEquivalanceAc.style.display = 'none'
   }
@@ -81,19 +81,17 @@ montantRubAc.addEventListener('input', () => {
   // Get user input value
   const userInputValue = montantRubAc.value
   // Conersion
-  const tatal = userInputValue * rateRubAc
+  const tatal = new Intl.NumberFormat().format(userInputValue * rateRubAc)
   // Insert to HTML
   equivalanceRubAc.innerHTML = `<b>${tatal}</b>`
 
   // Dynamic show div equivalance
   if (userInputValue) {
-    divEquivalanceRubAc.style.display = 'block'
+    divEquivalanceRubAc.style.display = 'flex'
   } else {
     divEquivalanceRubAc.style.display = 'none'
   }
 })
-
-
 
 // ============== Scroll Reveal ============== //
 const sr = ScrollReveal({
@@ -103,10 +101,3 @@ const sr = ScrollReveal({
 
 sr.reveal(`.title`, { origin: 'top', delay: 300 })
 sr.reveal(`.card-1`, { origin: 'left', delay: 500 })
-// sr.reveal(`.card-2`, { origin: 'right', delay: 700 })
-
-// const navLink = document.querySelectorAll('.nav-link')
-
-// navLink.forEach(el => el.addEventListener('click', () => {
-  
-// }))

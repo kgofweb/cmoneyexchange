@@ -12,9 +12,8 @@
 </head>
 <body>
   <div class="container">
-    <h2 class="title mb-5 mt-4"><span>Chapmoney</span> 
-      Convert
-    </h2>
+    <h2 class="title mt-4">Chapmoney Convert</h2>
+    <hr class="mb-5 bg-light">
 
     <ul class="nav nav-tabs">
       <li class="nav-item">
@@ -33,31 +32,35 @@
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="card card-1 w-50 mt-4 mb-5">
-          <img src="./img/03.gif" style="width: 20rem;" class="card-img-top">
+          <img src="./img/ill-5.webp" style="width: 13rem;" class="card-img-top">
           <div class="card-body">
             <div class="row">
               <div class="col-6">
-                <div class="mb-3">
-                  <i class="uil uil-money-insert"></i>
-                  <label class="form-label">Montant <b>CFA</b></label>
-                  <input type="number" class="form-control" id="montant">
+                <!-- 1 -->
+                <div class="input-group mb-3">
+                  <!-- <i class="uil uil-money-insert"></i> -->
+                  <input type="text" class="form-control" id="montant">
+                  <span class="input-group-text" id="basic-addon2"><b>FCA</b></span>
                 </div>
-                <div class="equivalance">
-                  <i class="uil uil-money-withdraw"></i>
-                  <label class="form-label">Equivalence <b>RUB</b></label>
-                  <div type="text" class="form-control" id="equivalance"></div>
+                <!-- 2 -->
+                <div class="input-group equivalance">
+                  <!-- <i class="uil uil-money-withdraw"></i> -->
+                  <!-- <label class="form-label">Equivalence <b>RUB</b></label> -->
+                  <div class="result form-control" id="equivalance"></div>
+                  <span class="input-group-text" id="basic-addon2"><b>RUB</b></span>
                 </div>
               </div>
               <div class="col-6">
-                <div class="montant-rub mb-3">
-                  <i class="uil uil-money-insert"></i>
-                  <label class="form-label">Montant <b>RUB</b></label>
-                  <input type="number" class="form-control" id="montant-rub">
+                <div class="input-group montant-rub mb-3">
+                  <!-- <i class="uil uil-money-insert"></i> -->
+                  <input type="text" class="form-control" id="montant-rub">
+                  <span class="input-group-text" id="basic-addon2"><b>RUB</b></span>
                 </div>
-                <div class="equivalance-rub">
-                  <i class="uil uil-money-withdraw"></i>
-                  <label class="form-label">Equivalence <b>CFA</b></label>
-                  <div type="text" class="form-control" id="equivalance-rub"></div>
+                <div class="input-group equivalance-rub">
+                  <!-- <i class="uil uil-money-withdraw"></i>
+                  <label class="form-label">Equivalence <b>CFA</b></label> -->
+                  <div class="result form-control" id="equivalance-rub"></div>
+                  <span class="input-group-text" id="basic-addon2"><b>FCA</b></span>
                 </div>
               </div>
             </div>
@@ -66,32 +69,32 @@
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-        <div class="card card-2 w-50 mt-5">
-          <img src="./img/02.gif" style="width: 15rem;" class="card-img-top">
+        <div class="card card-2 w-50">
+          <img src="./img/ill-9.webp" style="width: 15rem;" class="card-img-top">
           <div class="card-body">
             <div class="row">
               <div class="col-6">
-                <div class="mb-3">
-                  <i class="uil uil-money-insert"></i>
-                  <label class="form-label">Montant <b>CFA</b></label>
-                  <input type="number" class="form-control" id="montant-ac">
+                <div class="input-group mb-3">
+                  <!-- <i class="uil uil-money-insert"></i> -->
+                  <input type="text" class="form-control" id="montant-ac">
+                  <span class="input-group-text" id="basic-addon2"><b>FCA</b></span>
                 </div>
-                <div class="equivalance-ac">
-                  <i class="uil uil-money-withdraw"></i>
-                  <label class="form-label">Equivalence <b>RUB</b></label>
-                  <div type="text" class="form-control" id="equivalance-ac"></div>
+                <div class="input-group equivalance-ac">
+                  <!-- <i class="uil uil-money-withdraw"></i> -->
+                  <div class="result form-control" id="equivalance-ac"></div>
+                  <span class="input-group-text" id="basic-addon2"><b>RUB</b></span>
                 </div>
               </div>
               <div class="col-6">
-                <div class="montant-rub-ac mb-3">
-                  <i class="uil uil-money-insert"></i>
-                  <label class="form-label">Montant <b>RUB</b></label>
-                  <input type="number" class="form-control" id="montant-rub-ac">
+                <div class="input-group montant-rub-ac mb-3">
+                  <!-- <i class="uil uil-money-insert"></i> -->
+                  <input type="text" class="form-control" id="montant-rub-ac">
+                  <span class="input-group-text" id="basic-addon2"><b>RUB</b></span>
                 </div>
-                <div class="equivalance-rub-ac">
-                  <i class="uil uil-money-withdraw"></i>
-                  <label class="form-label">Equivalence <b>CFA</b></label>
-                  <div type="text" class="form-control" id="equivalance-rub-ac"></div>
+                <div class="input-group equivalance-rub-ac">
+                  <!-- <i class="uil uil-money-withdraw"></i> -->
+                  <div class="result form-control" id="equivalance-rub-ac"></div>
+                  <span class="input-group-text" id="basic-addon2"><b>FCA</b></span>
                 </div>
               </div>
             </div>
