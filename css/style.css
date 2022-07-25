@@ -1,6 +1,9 @@
 body {
-  background-image: url('../img/banner.jpg');
-  background-repeat: no-repeat;
+  background: url('../img/showcase.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h2 {
@@ -17,27 +20,10 @@ img {
   margin-right: auto;
 }
 
-input {
-  border: none;
-}
-
-.nav-tabs {
-  width: 50%;
-  border: none;
-}
-
-.tab-item {
-  color: white;
-}
-
-.tab-item:hover {
-  color: white;
-}
-
 .card {
+  border-top: 8px solid #ffa801;
+  background-color: #fff;
   margin-top: 2rem;
-  background-color: #222f3e;
-  color: #fff;
 }
 
 .card-1 {
@@ -56,24 +42,37 @@ input {
 .equivalance-rub {
   display: none;
 }
-.equivalance-ac {
-  display: none;
-}
-
-.equivalance-rub-ac {
-  display: none;
-}
 
 .result {
-  background-color: #c5f9da;
-  border-left: 7px solid #2ed573;
+  width: 100%;
+  color: #424242;
+  padding: .3rem 0;
+  border-bottom: 1.6px dashed #2ed573;
+}
+
+.result-RUB {
+  border-bottom: 1.6px dashed #3c40c6;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
 }
 
 @media screen and (max-width: 800px) {
-  .nav-tabs {
-    width: 100%;
-  }  
-
   .card {
     width: 100% !important;
   }
