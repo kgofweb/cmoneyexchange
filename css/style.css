@@ -26,6 +26,10 @@ img {
   margin-top: 2rem;
 }
 
+.card__two {
+  border-top: 8px solid #20bf6b;
+}
+
 .card-1 {
   border-left: 8px solid #fff;
 }
@@ -35,13 +39,14 @@ img {
   border-left: 8px solid #fff;
 }
 
-.equivalance {
+.equivalance,
+.equivalance-rub,
+.equivalance-ac,
+.equivalance-rub-ac {
   display: none;
 }
 
-.equivalance-rub {
-  display: none;
-}
+
 
 .result {
   width: 100%;
