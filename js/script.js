@@ -41,7 +41,7 @@ function conversionRub() {
   // Conersion
   const tatalMoney = new Intl.NumberFormat().format(userInputVal * rateRUB)
   // Insert to HTML
-  equivalanceRub.innerHTML = `<span><i class="me-3 fa-solid fa-coins"></i> ${tatalMoney}</span> <span>RUB</span>`
+  equivalanceRub.innerHTML = `<span><i class="me-3 fa-solid fa-coins"></i> ${tatalMoney}</span> <span>CFA</span>`
 
   // Dynamic show div equivalance
   if (userInputVal) {
