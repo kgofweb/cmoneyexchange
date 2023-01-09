@@ -7,7 +7,7 @@ const equivalanceRubAc = document.getElementById('equivalance-rub-ac')
 const divEquivalanceRubAc = document.querySelector('.equivalance-rub-ac')
 
 // Rate Only AC
-let rateAc = 0.10507
+let rateAc = 0.10467
 let rateRubAc = 8.69
 
 montantAc.addEventListener('input', () => {
