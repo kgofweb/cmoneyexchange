@@ -20,7 +20,6 @@ montantAc.addEventListener('input', () => {
     <span><i class="me-3 fa-solid fa-coins"></i> ${tatal}</span> <span>RUB</span>
   `
   
-
   // Dynamic show div equivalance
   if (userInputValue) {
     divEquivalanceAc.style.display = 'flex'

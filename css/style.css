@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 
-h2 {
+h3 {
   color: #fff;
 }
 
@@ -21,13 +21,13 @@ img {
 }
 
 .card {
-  border-top: 8px solid #ffa801;
+  border-top: 8px solid #f53b57;
   background-color: #fff;
   margin-top: 2rem;
 }
 
 .card__two {
-  border-top: 8px solid #20bf6b;
+  border-top: 8px solid #ffa801;
 }
 
 .card-1 {
@@ -45,8 +45,6 @@ img {
 .equivalance-rub-ac {
   display: none;
 }
-
-
 
 .result {
   width: 100%;
