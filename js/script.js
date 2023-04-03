@@ -25,7 +25,7 @@ function conversion () {
   // Conersion
   const tatalMoney = new Intl.NumberFormat().format(userInputValue * rateXOF)
   // Insert to HTML
-  equivalance.innerHTML = `<span><i class="me-3 fa-solid fa-coins"></i> ${tatalMoney}</span> <span>RUB</span>`
+  equivalance.innerHTML = `<span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatalMoney}</span> <span><i class="fa-solid fa-ruble-sign"></i></span>`
 
   // Dynamic show div equivalance
   if (userInputValue) {
@@ -41,7 +41,7 @@ function conversionRub() {
   // Conersion
   const tatalMoney = new Intl.NumberFormat().format(userInputVal * rateRUB)
   // Insert to HTML
-  equivalanceRub.innerHTML = `<span><i class="me-3 fa-solid fa-coins"></i> ${tatalMoney}</span> <span>CFA</span>`
+  equivalanceRub.innerHTML = `<span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatalMoney}</span> <span class='fw-bold'>CFA</span>`
 
   // Dynamic show div equivalance
   if (userInputVal) {

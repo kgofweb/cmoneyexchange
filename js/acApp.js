@@ -17,7 +17,7 @@ montantAc.addEventListener('input', () => {
   const tatal = new Intl.NumberFormat().format(userInputValue * rateAc)
   // Insert to HTML
   equivalanceAc.innerHTML = `
-    <span><i class="me-3 fa-solid fa-coins"></i> ${tatal}</span> <span>RUB</span>
+    <span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatal}</span> <span><i class="fa-solid fa-ruble-sign"></i></span>
   `
   
   // Dynamic show div equivalance
@@ -35,7 +35,7 @@ montantRubAc.addEventListener('input', () => {
   const tatal = new Intl.NumberFormat().format(userInputValue * rateRubAc)
   // Insert to HTML
   equivalanceRubAc.innerHTML = `
-    <span><i class="me-3 fa-solid fa-coins"></i> ${tatal}</span> <span>CFA</span>
+    <span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatal}</span> <span class='fw-bold'>CFA</span>
   `
 
   // Dynamic show div equivalance

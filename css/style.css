@@ -1,62 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
 body {
-  background: url('../img/showcase.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d3e6ed;
+  color: #172738;
 }
-
-h3 {
-  color: #fff !important;
+.container__content {
+  margin-top: 9rem;
 }
-
-i {
-  font-size: 1.4rem;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  border-top: 8px solid #f53b57;
-  background-color: #fff;
+.content__img {
+  width: 6rem;
   margin-top: 2rem;
 }
-
-.card__two {
-  border-top: 8px solid #ffa801;
+.content__title {
+  font-weight: 600;
 }
-
-.card-1 {
-  border-left: 8px solid #fff;
+.card {
+  border: none;
 }
-
-.card-2 {
-  background-color: #636e72;
-  border-left: 8px solid #fff;
+i {
+  font-size: 1rem;
 }
-
+.card {
+  width: 50% !important;
+  margin: auto !important;
+  background-color: #fff;
+}
+.card__one {
+  width: 50%;
+  margin: auto;
+}
+.nav-link {
+  color: #2d3436 !important;
+}
+.nav-link.active {
+  color: #fff !important;
+  font-weight: bold;
+  background-color: #3742fa !important;
+}
 .equivalance,
 .equivalance-rub,
 .equivalance-ac,
-.equivalance-rub-ac {
+.equivalance-rub-ac,
+.equivalance-rub-guinee,
+.equivalance-guinee {
   display: none;
 }
-
 .result {
   width: 100%;
   color: #424242;
   padding: .3rem 0;
   border-bottom: 1.6px dashed #2ed573;
 }
-
 .result-RUB {
   border-bottom: 1.6px dashed #3c40c6;
 }
-
+.badge {
+  background-color: #cce3f9;
+  color: #0984e3;
+  font-size: .850rem;
+}
 textarea:hover, 
 input:hover, 
 textarea:active, 
@@ -71,10 +74,8 @@ label:focus,
 .btn.active
 {
   outline:0px !important;
-  -webkit-appearance:none;
   box-shadow: none !important;
 }
-
 @media screen and (max-width: 800px) {
   .card {
     width: 100% !important;
