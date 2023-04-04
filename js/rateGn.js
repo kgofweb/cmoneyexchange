@@ -35,7 +35,7 @@ russ_vers_guinee.addEventListener('input', () => {
   const tatal = new Intl.NumberFormat().format(userInputValue * russie_vers_gui)
   // Insert to HTML
   equivalance_rub_guinee.innerHTML = `
-    <span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatal}</span> <span class="fw-bold">CFA</span>
+    <span><i class="me-2 fa-solid fa-sack-dollar"></i> ${tatal}</span> <span class="fw-bold">FG</span>
   `
 
   // Dynamic show div equivalance
