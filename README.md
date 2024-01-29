@@ -1,3 +1,3 @@
 Licence: MIT
 
-All Right Reserved &copy; 2024
+All Rights Reserved &copy; 2024
