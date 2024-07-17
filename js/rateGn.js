@@ -7,7 +7,7 @@ const equivalance_rub_guinee= document.getElementById('equivalance-rub-guinee')
 const divEquivalance_rub_guinee = document.querySelector('.equivalance-rub-guinee')
 
 // Rate Only AC
-let guinee_vers_rus = 0.0092
+let guinee_vers_rus = 0.00865
 let russie_vers_gui = 83
 
 montant_guinee.addEventListener('input', () => {
