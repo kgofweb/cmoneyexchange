@@ -16,7 +16,7 @@ montantRub.addEventListener('input', conversionRub)
 
 // ================= AO ================= //
 // Init Rate
-let rateXOF = 0.142
+let rateXOF = 0.146
 
 let rateRUB = 6.174
 
